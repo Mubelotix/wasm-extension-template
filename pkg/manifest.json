@@ -1,0 +1,15 @@
+{
+    "name" : "{{project-name}}",
+    "version" : "1.0",
+    "description" : "{{project-name}}",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*"],
+            "js": ["run_wasm.js"]
+        }
+    ],
+    "manifest_version": 2
+}
