@@ -1,3 +1,6 @@
-import('http://localhost:8001/{{crate_name}}.js').then((module) => {
-    module.default();
-});
+import init from './{{crate_name}}.js';
+
+async function run() {
+    await init();
+}
+run();

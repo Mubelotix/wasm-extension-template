@@ -8,8 +8,13 @@
     "content_scripts": [
         {
             "matches": ["*://*.example.com/*"],
-            "js": ["run_wasm.js"]
+            "js": ["inject_module.js"]
         }
+    ],
+    "web_accessible_resources": [
+        "{{crate_name}}.js",
+        "run_wasm.js",
+        "{{crate_name}}_bg.wasm"
     ],
     "manifest_version": 2
 }
