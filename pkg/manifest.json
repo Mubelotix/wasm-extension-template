@@ -7,7 +7,7 @@
     ],
     "content_scripts": [
         {
-            "matches": ["*"],
+            "matches": ["*://*.example.com/*"],
             "js": ["run_wasm.js"]
         }
     ],
