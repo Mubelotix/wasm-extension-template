@@ -12,7 +12,7 @@ cargo install cargo-generate
 cargo install wasm-pack
 ```
 
-Then, use cargo-generate to generate a new crate (modify then name at the end of the command):
+Then, use cargo-generate to generate a new crate (modify the name at the end of the command):
 
 ```sh
 cargo generate --git https://github.com/Mubelotix/wasm-extension-template --name amazing-extension
