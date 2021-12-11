@@ -1,7 +1,9 @@
-# wasm-extension-template
+# WASM Extension Template
 
-This template allows you to generate a "Hello World" web extension running a Rust program compiled to WASM.  
-**That readme is a draft**
+This template allows you to generate a "Hello World" web extension running a **Rust program compiled to WASM**.  
+The program will be executed as a content script, without the need of being injected into the page.
+
+![Demo image](https://media.discordapp.net/attachments/546761853297229825/919179215390261258/unknown.png?width=1080&height=181)
 
 ## Generate a crate
 
@@ -12,28 +14,29 @@ cargo install cargo-generate
 cargo install wasm-pack
 ```
 
-Then, use cargo-generate to generate a new crate (modify the name at the end of the command):
+Then, use `cargo-generate` to generate a new crate (modify the name at the end of the command):
 
 ```sh
 cargo generate --git https://github.com/Mubelotix/wasm-extension-template --name amazing-extension
 ```
 
-Your crate is now generated and is ready to be compiled.
+Your crate is now generated and ready to be compiled.
 
-## Compile the crate
+## Compile your crate
 
-You can use `wasm-pack` to build the crate.
+You can use `wasm-pack` to build the crate.  
+Be aware of the `target=no-modules` parameter as it wouldn't work without.
 
 ```sh
-wasm-pack build --target=web
+wasm-pack build --target=no-modules
 ```
 
 Once compiled, the target files are ready to be used in the `pkg` folder.
 
-## Use your crate
+## Test your program
 
 Web browsers allow developpers to test web extensions before publishment.
 See your browser's specific instructions to do that.
 The generated `manifest.json` file is located in the `pkg` folder.
-By default, your extension will run only on example.com.
+By default, your extension will run on example.com and have no other permissions.
 You should want to modify the manifest (see [the doc](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json)).
