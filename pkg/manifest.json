@@ -2,9 +2,7 @@
     "name" : "{{project-name}}",
     "version" : "1.0",
     "description" : "{{project-name}}",
-    "permissions": [
-        "activeTab"
-    ],
+    "permissions": [],
     "content_scripts": [
         {
             "matches": ["*://*.example.com/*"],
