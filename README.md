@@ -5,25 +5,29 @@ The program will be executed as a **content script**, without the need of being 
 
 ![Demo image](https://media.discordapp.net/attachments/546761853297229825/919179215390261258/unknown.png?width=1080&height=181)
 
-## Generate a crate
+## Install tools
+
+```sh
+cargo install cargo-generate
+cargo install wasm-pack
+```
+
+## Generate an extension
 
 You can use `cargo-generate` to generate a new crate (modify the name at the end of the command):
 
 ```sh
-cargo install cargo-generate
 cargo generate --git https://github.com/Mubelotix/wasm-extension-template --name amazing-extension
 ```
 
 Your crate is now generated and ready to be compiled.
 
-## Compile your crate
+## Compile your extension
 
-You should use `wasm-pack` to build the crate.  
-Be aware of the `target=no-modules` parameter as it wouldn't work without.
+You cannot use `cargo build` to compile your crate. Use the `build.sh` script instead:
 
 ```sh
-cargo install wasm-pack
-wasm-pack build --target=no-modules
+sh build.sh
 ```
 
 Once compiled, the target files are ready to be used in the `pkg` folder.
