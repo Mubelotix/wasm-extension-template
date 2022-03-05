@@ -36,6 +36,6 @@ Once compiled, the target files are ready to be used in the `pkg` folder.
 
 Web browsers allow developpers to test web extensions before publishment.
 See your browser's specific instructions to do that.
-The generated `manifest.json` file is located in the `pkg` folder.
+After build, the `manifest.json` file is located in the `pkg` folder.
 By default, your extension will run on example.com and have no other permissions.
 You should want to modify the manifest (see [the doc](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json)).
