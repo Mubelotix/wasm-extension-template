@@ -3,6 +3,8 @@
 This template allows you to generate a "Hello World" web extension running a **Rust program compiled to WASM**.  
 The program will be executed as a **content script**, without the need of being injected into the page.
 
+Supports both manifest v2 and v3.
+
 ![Demo image](https://media.discordapp.net/attachments/546761853297229825/919179215390261258/unknown.png?width=1080&height=181)
 
 ## Install tools
