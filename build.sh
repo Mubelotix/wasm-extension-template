@@ -23,4 +23,12 @@ else
   fi
 fi
 
-printf "async function run() {\n\tawait wasm_bindgen(chrome.extension.getURL('{{crate_name}}_bg.wasm'));\n}\n\nrun();" >> pkg/run_wasm.js
+printf "
+const runtime = chrome.runtime || browser.runtime;
+
+async function run() {
+  await wasm_bindgen(runtime.getURL('{{crate_name}}_bg.wasm'));
+}
+
+run();
+" >> pkg/run_wasm.js
