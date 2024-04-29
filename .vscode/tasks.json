@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build extension (manifest v2)",
+            "command": "sh",
+            "args": [
+                "build.sh"
+            ],
+            "type": "shell",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "close": true,
+                "clear": true
+            }
+        }
+    ]
+}
