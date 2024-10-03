@@ -1,7 +1,6 @@
 # WASM Extension Template
 
-This template allows you to generate a "Hello World" web extension running a **Rust program compiled to WASM**.  
-The program will be executed as a **content script**, without the need of being injected into the page.
+Use this template to quickly generate an empty Hello World web extension in Rust. This will get your code executed the right way.
 
 Supports both manifest v2 and v3.
 
