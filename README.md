@@ -1,10 +1,8 @@
 # WASM Extension Template
 
-Use this template to quickly generate an empty Hello World web extension in Rust. This will get your code executed the right way.
+Use this template to quickly generate an empty *Hello World* web extension in Rust. This will get your code executed the right way.
 
 Supports both manifest v2 and v3.
-
-![Demo image](https://media.discordapp.net/attachments/546761853297229825/919179215390261258/unknown.png?width=1080&height=181)
 
 ## Install tools
 
