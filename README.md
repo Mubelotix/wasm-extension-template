@@ -4,6 +4,8 @@ Use this template to quickly generate an empty *Hello World* web extension in Ru
 
 Supports both manifest v2 and v3.
 
+Will install wasm-specific build tools for you.
+
 ## Install tools
 
 ```sh
